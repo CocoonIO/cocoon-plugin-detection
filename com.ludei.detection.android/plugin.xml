@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cocoon-plugin-detection-android"
+    version="1.0.0">
+
+    <name>Cocoon Android Detection plugin</name>
+    <description>Cocoon plugin detection support.</description>
+    <license>Copyright Ludei</license>
+    <keywords>cordova, ludei, cocoon, application</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <engines>
+      <engine name="cordova-android" version=">=4" />
+      <engine name="cordova-plugman" version=">=4.2.0" />
+    </engines>
+
+    <platform name="android">
+        <hook type="after_plugin_install" src="hooks/after_plugin_install.js" />
+        
+        <source-file src="src/LudeiExtensionDetection.jar" target-dir="libs" framework="true" />
+
+        <source-file src="src/flandmark.jar" target-dir="libs" framework="true" />
+        <source-file src="src/javacpp.jar" target-dir="libs" framework="true" />
+        <source-file src="src/javacv.jar" target-dir="libs" framework="true" />
+        <source-file src="src/opencv.jar" target-dir="libs" framework="true" />
+
+        <source-file src="src/armeabi/libjniflandmark.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libjniopencv_core.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libjniopencv_highgui.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libjniopencv_imgcodecs.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libjniopencv_imgproc.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libjniopencv_ml.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libjniopencv_objdetect.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libjniopencv_videoio.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libopencv_core.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libopencv_highgui.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libopencv_imgcodecs.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libopencv_imgproc.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libopencv_ml.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libopencv_objdetect.so" target-dir="libs/armeabi" framework="true" />
+        <source-file src="src/armeabi/libopencv_videoio.so" target-dir="libs/armeabi" framework="true" />
+
+        <source-file src="src/armeabi-v7a/libjniflandmark.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libjniopencv_core.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libjniopencv_highgui.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libjniopencv_imgcodecs.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libjniopencv_imgproc.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libjniopencv_ml.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libjniopencv_objdetect.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libjniopencv_videoio.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libopencv_core.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libopencv_highgui.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libopencv_imgcodecs.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libopencv_imgproc.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libopencv_ml.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libopencv_objdetect.so" target-dir="libs/armeabi-v7a/" framework="true" />
+        <source-file src="src/armeabi-v7a/libopencv_videoio.so" target-dir="libs/armeabi-v7a/" framework="true" />
+
+        <source-file src="src/x86/libjniflandmark.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libjniopencv_core.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libjniopencv_highgui.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libjniopencv_imgcodecs.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libjniopencv_imgproc.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libjniopencv_ml.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libjniopencv_objdetect.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libjniopencv_videoio.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libopencv_core.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libopencv_highgui.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libopencv_imgcodecs.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libopencv_imgproc.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libopencv_ml.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libopencv_objdetect.so" target-dir="libs/x86" framework="true" />
+        <source-file src="src/x86/libopencv_videoio.so" target-dir="libs/x86" framework="true" />
+    </platform>
+</plugin>
